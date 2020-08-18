@@ -40,3 +40,9 @@ comenzar a desarrollar
 - `gem install bundler`
 
 - `bundle config github.https true`
+
+### Create a new project
+
+- `gem install rails`
+
+- `rails new mi_app`
