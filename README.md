@@ -1,6 +1,10 @@
-# Rails App
+# Notebook App
 
-Diseñado para hacer comprensión conceptual, o sea, no preocuparse tanto por las tecnologías que estan por debajo y de aprenderlas, sino de utilizar interfaces más humanas, abstracciones que permitan llegar aun puto especifico de una forma más rápida
+Aplicación web que maneja tareas como si fuera una libreta
+
+## About the technology
+
+Rails es un framework de desarrollo web diseñado para hacer comprensión conceptual, o sea, no preocuparse tanto por las tecnologías que estan por debajo y de aprenderlas, sino de utilizar interfaces más humanas, abstracciones que permitan llegar aun punto especifico de una forma más rápida.
 
 - Aprendizaje JIT (Just in Time), no hay que aprender todo para 
 comenzar a desarrollar
@@ -8,6 +12,16 @@ comenzar a desarrollar
 - Principio DRY (Convención sobre configuración)
 
 - Diseñado para construir rápido y automátizar
+
+## Technologies
+
+- Ruby | Ruby on Rails
+
+- Hamlit | SimpleForm
+
+- Bootstrap CSS | JQuery | PopperJS | Roboto FontFace
+
+- Docker | PostgresSQL | Rbenv
 
 ## Install Ruby on Ubuntu 20.04 LTS
 
@@ -41,8 +55,20 @@ comenzar a desarrollar
 
 - `bundle config github.https true`
 
-### Create a new project
+## Addictional
 
-- `gem install rails`
+- [Template engine Hamlit](https://github.com/k0kubun/hamlit)
 
-- `rails new mi_app`
+- [Simple form](https://github.com/heartcombo/simple_form)
+
+- Config simple_form with bootstrap `rails g simple_form:install --bootstrap`
+
+- Manage locales `gem install i18n-tasks`
+
+- Debugging: Add `gem 'pry'` and `gem 'pry-doc'` inside Gemfile (developement and test)
+
+## Run project
+
+- `bundler install & yarn`
+
+- `rails s`
