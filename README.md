@@ -49,6 +49,10 @@ comenzar a desarrollar
 
 - `rbenv global 2.7.1`
 
+### Docker and PostgreSQL
+
+- `docker run --name postgres-name -p 127.0.0.1:5432:5432 -e POSTGRES_PASSWORD=developer -e POSTGRES_USER=pgdev -d postgres:latest`
+
 ### Install Bundler and enable secure HTTP requests
 
 - `gem install bundler`
@@ -61,11 +65,14 @@ comenzar a desarrollar
 
 - [Simple form](https://github.com/heartcombo/simple_form)
 
+- Document models with annotate: Add `gem 'annotate'` to Gemfile | Run `annotate --models --exclude fixtures`
+
 - Config simple_form with bootstrap `rails g simple_form:install --bootstrap`
 
 - Manage locales `gem install i18n-tasks`
 
 - Debugging: Add `gem 'pry'` and `gem 'pry-doc'` inside Gemfile (developement and test)
+
 
 ## Run project
 
