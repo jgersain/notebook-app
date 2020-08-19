@@ -59,13 +59,23 @@ comenzar a desarrollar
 
 - `bundle config github.https true`
 
-## Addictional
+### Authentication
+
+- `gem 'devise'`
+
+- `rails g devise:install`
+
+- `rails g devise User`
+
+## Additional
 
 - [Template engine Hamlit](https://github.com/k0kubun/hamlit)
 
 - [Simple form](https://github.com/heartcombo/simple_form)
 
 - Document models with annotate: Add `gem 'annotate'` to Gemfile | Run `annotate --models --exclude fixtures`
+
+- Internationalization: Add `gem 'rails-i18n'`
 
 - Config simple_form with bootstrap `rails g simple_form:install --bootstrap`
 
