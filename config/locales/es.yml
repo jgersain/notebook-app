@@ -16,6 +16,9 @@ es:
   common:
     back: Atrás
   hello: Hola Mundo
+  task:
+    errors:
+      invalid_due_date: La fecha no debe de estar en el pasado.
   tasks:
     form:
       category: Categoria

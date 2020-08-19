@@ -9,4 +9,10 @@
 #  updated_at  :datetime         not null
 #
 class Category < ApplicationRecord
+  # Associations
+  has_many :tasks
+
+  # validations
+  validates :name, :description, presence: true
+  validates :name, uniqueness: { case_insensitive: false }
 end

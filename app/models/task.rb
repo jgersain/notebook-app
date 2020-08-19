@@ -12,4 +12,18 @@
 #
 class Task < ApplicationRecord
   belongs_to :category
+
+  # validations
+  validates :name, :description, presence: true
+  validates :name, uniqueness: { case_insensitive: false }
+  
+  # custom validation
+  validate :due_date_validity
+
+  def due_date_validity
+    # date must be present, y conditions are false, exec error
+    return if due_date.blank?
+    return if due_date > Date.today
+    errors.add :due_date, I18n.t('task.errors.invalid_due_date')
+  end
 end
