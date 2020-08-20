@@ -75,6 +75,26 @@ comenzar a desarrollar
 
 - Document models with annotate: Add `gem 'annotate'` to Gemfile | Run `annotate --models --exclude fixtures`
 
+- Cocoon: Add `gem 'cocoon'` and `yarn add github:nathanvda/cocoon#c24ba53`
+
+app/javascript/packs/application.js
+```
+import 'cocoon'
+```
+
+config/webpack/environment.js
+```
+const webpack = require('webpack')
+environment.plugins.prepend('Provide', 
+  new webpack.providePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    'window.jQuery': 'jquery',
+    Popper: ['popper.js', 'default']
+  })
+)
+```
+
 - Internationalization: Add `gem 'rails-i18n'`
 
 - Config simple_form with bootstrap `rails g simple_form:install --bootstrap`
@@ -89,3 +109,8 @@ comenzar a desarrollar
 - `bundler install & yarn`
 
 - `rails s`
+
+## Pendient tasks
+
+- Remove bootstrap and add tailwindcss
+- Update cocoon yarn module to new rails version
